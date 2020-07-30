@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_bar_destaques">
+
+    <fragment
+        android:id="@+id/nav_bar_destaques"
+        android:name="com.example.hoteltucano.view.uiMain.ui.destaques.DestaquesFragment"
+        android:label="Destaques"
+        tools:layout="@layout/destaques_nav_bar" />
+
+    <fragment
+        android:id="@+id/nav_bar_hotel"
+        android:name="com.example.hoteltucano.view.uiMain.ui.hotel.HotelFragment"
+        android:label="Hotel"
+        tools:layout="@layout/fragment_hotel" />
+
+    <fragment
+        android:id="@+id/nav_bar_packages"
+        android:name="com.example.hoteltucano.view.uiMain.ui.packages.PackagesFragment"
+        android:label="Packages"
+        tools:layout="@layout/fragment_package" />
+
+    <fragment
+        android:id="@+id/nav_bar_person"
+        android:name="com.example.hoteltucano.view.uiMain.ui.person.PersonFragment"
+        android:label="Person"
+        tools:layout="@layout/fragment_person"/>
+
+    <fragment
+        android:id="@+id/nav_bar_more"
+        android:name="com.example.hoteltucano.view.uiMain.ui.more.MoreFragmet"
+        android:label="Person"
+        tools:layout="@layout/fragment_more"/>
+
+</navigation>

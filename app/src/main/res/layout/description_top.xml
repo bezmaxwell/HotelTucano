@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/images_top"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/images_top" />
+
+            <TextView
+                android:id="@+id/description_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Secundary Text"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_top" />
+
+
+            <ImageView
+                android:id="@+id/image_star_top"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_baseline_star_24"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_top" />
+
+
+            <TextView
+                android:id="@+id/num_diarias_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="7"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/image_star_top"
+                app:layout_constraintTop_toBottomOf="@+id/description_top" />
+
+            <TextView
+                android:id="@+id/text_diarias_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Diárias"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/num_diarias_top"
+                app:layout_constraintTop_toBottomOf="@+id/description_top" />
+
+
+            <ImageView
+                android:id="@+id/image_person_top"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:src="@drawable/ic_person_black_24dp"
+                app:layout_constraintLeft_toRightOf="@+id/text_diarias_top"
+                app:layout_constraintTop_toBottomOf="@+id/description_top" />
+
+
+            <TextView
+                android:id="@+id/num_person_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="3"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/image_person_top"
+                app:layout_constraintTop_toBottomOf="@+id/description_top" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text="Pessoas"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/num_person_top"
+                app:layout_constraintTop_toBottomOf="@+id/description_top" />
+
+            <TextView
+                android:id="@+id/porcent_top"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#FC7A00"
+                android:gravity="center"
+                android:text="-50 %"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_top" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="A partir de "
+                app:layout_constraintRight_toLeftOf="@+id/rsOldPrice_top"
+                app:layout_constraintTop_toBottomOf="@+id/porcent_top" />
+
+            <TextView
+                android:id="@+id/rsOldPrice_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$: "
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/oldPrice_top"
+                app:layout_constraintTop_toBottomOf="@+id/porcent_top" />
+
+
+            <TextView
+                android:id="@+id/oldPrice_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="1318"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/porcent_top" />
+
+
+            <TextView
+                android:id="@+id/rs_current_price_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="R$: "
+                android:textColor="#DC143C"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/current_price_top"
+                app:layout_constraintTop_toBottomOf="@+id/oldPrice_top" />
+
+
+            <TextView
+                android:id="@+id/current_price_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="600"
+                android:textColor="#FC7A00"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/oldPrice_top" />
+
+
+            <TextView
+                android:id="@+id/taxFree_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Sem Taxas|Em até 12x"
+                android:textColor="#B408F5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/current_price_top" />
+
+            <TextView
+                android:id="@+id/validated_period_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Válido para o período de:"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/num_diarias_top" />
+
+
+            <TextView
+                android:id="@+id/de_fragment_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="De"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/validated_period_top" />
+
+            <TextView
+                android:id="@+id/days_entry_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="serif"
+                android:text="01 mar 21"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/de_fragment_top"
+                app:layout_constraintTop_toBottomOf="@+id/validated_period_top" />
+
+
+            <TextView
+                android:id="@+id/a_fragment_Secundary_main_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="A"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/de_fragment_top" />
+
+
+            <TextView
+                android:id="@+id/days_out_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="serif"
+                android:text="30 nov 21"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/a_fragment_Secundary_main_activity"
+                app:layout_constraintTop_toBottomOf="@+id/days_entry_top" />
+
+
+            <TextView
+                android:id="@+id/guide_line_middle_top"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#000000"
+                app:layout_constraintTop_toBottomOf="@id/taxFree_top" />
+
+            <TextView
+                android:id="@+id/incluso_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="O que está incluso"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guide_line_middle_top" />
+
+            <ImageView
+                android:id="@+id/image_cancel_free_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+                app:layout_constraintRight_toLeftOf="@+id/text_cancel_free_top"
+                app:layout_constraintTop_toBottomOf="@+id/guide_line_middle_top" />
+
+            <TextView
+                android:id="@+id/text_cancel_free_top"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="end"
+                android:text="Cancelamento Grátis!"
+                android:textAlignment="textEnd"
+                android:textColor="#00D535"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guide_line_middle_top" />
+
+            <ImageView
+                android:id="@+id/image_apartment_top"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_apartment_24"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_cancel_free_top" />
+
+            <TextView
+                android:id="@+id/apartment_textView_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Apartamento"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_apartment_top" />
+
+            <ImageView
+                android:id="@+id/image_lunch_top"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_fastfood_24"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toRightOf="@+id/image_apartment_top"
+                app:layout_constraintTop_toBottomOf="@+id/text_cancel_free_top" />
+
+
+            <TextView
+                android:id="@+id/text_lunch_top"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:text="Café da manhã"
+                app:layout_constraintLeft_toRightOf="@+id/apartment_textView_top"
+                app:layout_constraintTop_toBottomOf="@id/image_lunch_top" />
+
+            <ImageView
+                android:id="@+id/image_take_off_top"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/ic_baseline_airplanemode_active_24"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toRightOf="@+id/image_lunch_top"
+                app:layout_constraintTop_toBottomOf="@+id/text_cancel_free_top" />
+
+
+            <TextView
+                android:id="@+id/text_take_off_top"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="center_horizontal"
+                android:text="Passagem Aérea"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toRightOf="@+id/text_lunch_top"
+                app:layout_constraintTop_toBottomOf="@id/image_take_off_top" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000"
+                app:layout_constraintTop_toBottomOf="@+id/text_take_off_top" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

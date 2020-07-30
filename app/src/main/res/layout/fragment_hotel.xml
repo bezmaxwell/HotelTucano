@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="hotelBinding"
+            type="com.example.hoteltucano.view.uiMain.ui.hotel.HotelFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#F0F0F0"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:focusable="true">
+
+
+        <TextView
+            android:id="@+id/text_search_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pesquisar por hotéis"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_local_hotel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_place_24"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_search_hotel"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView_Location_fragment_hotel"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_textview_fragment_hotel"
+            android:gravity="center_horizontal|center"
+            android:text="Local de destino"
+            android:textAlignment="gravity"
+            android:textDirection="firstStrong"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toRightOf="@+id/image_local_hotel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_search_hotel" />
+
+        <ImageView
+            android:id="@+id/image_calendar_hotel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_calendar_today_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_local_hotel" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="20dp"
+            android:elevation="20dp"
+            android:text="Saída"
+            android:textColor="#B44710"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_check_out_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Location_fragment_hotel" />
+
+        <TextView
+            android:id="@+id/text_check_out_hotel"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_textview_fragment_hotel"
+            android:gravity="start|center"
+            android:text="Day check out"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#C84B0D"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+            android:text="Entrada"
+            android:textColor="#B07A15"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/text_check_in_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Location_fragment_hotel" />
+
+        <TextView
+            android:id="@+id/text_check_in_hotel"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_textview_fragment_hotel"
+            android:gravity="start|center"
+            android:text="Day ckeck in"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#998B15"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/text_check_out_hotel"
+            app:layout_constraintStart_toEndOf="@+id/image_calendar_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            tools:ignore="NotSibling" />
+
+
+        <ImageView
+            android:id="@+id/image_room_hotel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_vpn_key_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_children_hotel" />
+
+        <Spinner
+            android:id="@+id/spinner_room_hotel"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="#ADD8E6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_room_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Quartos"
+            app:layout_constraintStart_toStartOf="@+id/spinner_room_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_children_hotel" />
+
+        <ImageView
+            android:id="@+id/image_people_hotel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_people_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_calendar_hotel" />
+
+        <Spinner
+            android:id="@+id/spinner_people_hotel"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="#ADD8E6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_people_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="Adultos"
+            app:layout_constraintStart_toStartOf="@+id/spinner_people_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/text_check_in_hotel" />
+
+
+        <ImageView
+            android:id="@+id/image_children_hotel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20sp"
+            android:scaleType="center"
+            android:src="@drawable/ic_baseline_child_care_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_people_hotel" />
+
+        <Spinner
+            android:id="@+id/spinner_children_hotel"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#ADD8E6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/image_children_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Crianças"
+            app:layout_constraintStart_toStartOf="@+id/spinner_children_hotel"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_people_hotel" />
+
+
+        <Button
+            android:id="@+id/button_search_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="#A9A9A9"
+            android:text="Pesquisar por hotéis"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_room_hotel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

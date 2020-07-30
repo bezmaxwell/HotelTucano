@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:animateLayoutChanges="true"
+        app:cardBackgroundColor="@color/colorGray"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_item_destaques"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/put_stars_item_destaques"
+                style="@style/customRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:stepSize="1"
+                android:textAlignment="center"
+                android:visibility="visible"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/a_partir_item_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="A partir de "
+                app:layout_constraintRight_toLeftOf="@+id/rs_price_out_item_destaques"
+                app:layout_constraintTop_toBottomOf="@+id/image_item_destaques" />
+
+            <TextView
+                android:id="@+id/rs_price_out_item_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="R$: "
+                android:textColor="#CD5C5D"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toLeftOf="@+id/price_out_item_destaques"
+                app:layout_constraintTop_toBottomOf="@+id/image_item_destaques" />
+
+            <TextView
+                android:id="@+id/price_out_item_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:text="1198 "
+                android:textColor="#CD5C5D"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_item_destaques" />
+
+            <TextView
+                android:id="@+id/rs_current_price_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="R$:"
+                android:textColor="	#9370DB	"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tax_free_destaques"
+                app:layout_constraintRight_toLeftOf="@+id/current_price_destaques" />
+
+            <TextView
+                android:id="@+id/current_price_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:text="998 "
+                android:textColor="#FF0000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tax_free_destaques"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tax_free_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Sem taxas em até 12X"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/cancel_free_destaques"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/cancel_free_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Cancelamento Grátis "
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+            <TextView
+                android:id="@+id/description_item_destaques"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="start"
+                android:maxLines="2"
+                android:paddingLeft="10dp"
+                android:text="Description"
+                android:textAlignment="textStart"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_item_destaques" />
+
+            <TextView
+                android:id="@+id/title_item_destaques"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:text="Title"
+                android:textAllCaps="true"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_item_destaques" />
+
+
+            <ImageView
+                android:id="@+id/image_star_item_destaques"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_stars_black_24dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline_item_destaques" />
+
+            <TextView
+                android:id="@+id/diarias_item_destaques"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Diárias"
+                app:layout_constraintLeft_toRightOf="@id/num_diarias_destaques"
+                app:layout_constraintTop_toTopOf="@+id/guideline_item_destaques" />
+
+
+            <ImageView
+                android:id="@+id/image_people_item_destaques"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_person_black_24dp"
+                app:layout_constraintLeft_toRightOf="@+id/diarias_item_destaques"
+                app:layout_constraintTop_toTopOf="@+id/guideline_item_destaques" />
+
+            <TextView
+                android:id="@+id/num_diarias_destaques"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="7"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/image_star_item_destaques"
+                app:layout_constraintTop_toTopOf="@+id/guideline_item_destaques" />
+
+
+            <TextView
+                android:id="@+id/num_person_destaques"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="2"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/image_people_item_destaques"
+                app:layout_constraintTop_toTopOf="@+id/guideline_item_destaques" />
+
+            <TextView
+                android:id="@+id/text_people_item_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Pessoas"
+                app:layout_constraintLeft_toRightOf="@+id/num_person_destaques"
+                app:layout_constraintTop_toTopOf="@+id/guideline_item_destaques" />
+
+            <TextView
+                android:id="@+id/porcent_item_destaques"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sale_discount_card_view"
+                android:gravity="center"
+                android:text="-50%"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_item_destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="275dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+

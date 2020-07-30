@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/oferta_description_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oferta Especial"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Mais Saídas"
+            android:textColor="#FF1493"/>
+
+        <TextView
+            android:id="@+id/title_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:text="Aéreo do Rio de Janeiro - 3 diárias"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oferta_description_middle"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/sub_description_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apartamento Duplo."
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/title_middle"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"
+            app:layout_constraintRight_toLeftOf="@+id/cancel_free_middle"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"/>
+
+
+        <TextView
+            android:id="@+id/cancel_free_middle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelamento Grátis"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:textColor="#00D535"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"/>
+
+        <Button
+            android:id="@+id/button_buy_middle"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_buy_fragment_secundary_middle"
+            android:textColor="#ffffff"
+            android:text="Comprar"
+            android:textAllCaps="true"
+            app:layout_constraintTop_toBottomOf="@+id/cancel_free_middle"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/star_middle"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:src="@drawable/ic_baseline_star_24"/>
+
+        <TextView
+            android:id="@+id/num_diarias_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/star_middle"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"/>
+
+        <TextView
+            android:id="@+id/text_diarias_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Diárias"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"
+            app:layout_constraintLeft_toRightOf="@+id/num_diarias_middle"/>
+
+
+        <ImageView
+            android:id="@+id/image_person_middle"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"
+            app:layout_constraintLeft_toRightOf="@+id/text_diarias_middle"
+            android:src="@drawable/ic_person_black_24dp"/>
+
+        <TextView
+            android:id="@+id/num_person_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/image_person_middle"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"/>
+
+        <TextView
+            android:id="@+id/text_person_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pessoas"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintLeft_toRightOf="@+id/num_person_middle"
+            app:layout_constraintTop_toBottomOf="@+id/sub_description_middle"/>
+
+
+        <TextView
+            android:id="@+id/apartir_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A partir de"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_person_middle"/>
+
+
+        <TextView
+            android:id="@+id/old_price_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R$ 1300"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"
+            app:layout_constraintTop_toBottomOf="@+id/image_person_middle"
+            app:layout_constraintLeft_toRightOf="@+id/apartir_middle"/>
+
+        <TextView
+            android:id="@+id/porcent_middle"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="#FC7A00"
+            android:gravity="center"
+            android:text="-50 %"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apartir_middle"/>
+
+        <TextView
+            android:id="@+id/current_price_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="R$ 600"
+            android:textColor="#FC7A00"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/porcent_middle"
+            app:layout_constraintTop_toBottomOf="@+id/apartir_middle" />
+
+        <TextView
+            android:id="@+id/free_tax_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sem Taxas|Em até 12x"
+            android:layout_marginLeft="70dp"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/current_price_middle"/>
+
+
+        <TextView
+            android:id="@+id/guide_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/free_tax_middle"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

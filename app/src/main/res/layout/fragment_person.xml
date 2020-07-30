@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="person_model"
+            type="com.example.hoteltucano.view.uiMain.ui.person.PersonFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/background_login_hotel_tucano">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="38dp" />
+
+            <ImageView
+                android:id="@+id/logo_person"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_baseline_flight_takeoff_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline1" />
+
+
+            <TextView
+                android:id="@+id/text_access_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Acesse sua conta!"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo_person" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="185dp" />
+
+            <EditText
+                android:id="@+id/email_register_person"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_textview_fragment_hotel"
+                android:elevation="5dp"
+                android:hint="E-mail"
+                android:lines="1"
+                android:maxLength="40"
+                android:inputType="textEmailAddress"
+                app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+
+
+            <EditText
+                android:id="@+id/password_register_person"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_textview_fragment_hotel"
+                android:elevation="5dp"
+                android:hint="Senha"
+                android:maxLength="5"
+                android:lines="1"
+                android:inputType="numberPassword"
+                app:layout_constraintTop_toBottomOf="@+id/email_register_person" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="318dp" />
+
+            <Button
+                android:id="@+id/create_account_person"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:text="Criar Conta?"
+                android:textAllCaps="false"
+                android:textColor="#F7043B"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toStartOf="@+id/login_account_person"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideline3" />
+
+            <Button
+                android:id="@+id/login_account_person"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:text="Entrar"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Esqueci minha senha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_account_person" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="423dp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                android:src="@drawable/ic_baseline_sms_24"
+                app:layout_constraintBottom_toBottomOf="@+id/button_facebook_person"
+                app:layout_constraintLeft_toLeftOf="@+id/button_facebook_person"
+                app:layout_constraintTop_toTopOf="@+id/button_facebook_person" />
+
+
+            <Button
+                android:id="@+id/button_facebook_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="#4425B9"
+                android:text="Continue com Facebook"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/guideline4" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:elevation="10dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                app:layout_constraintBottom_toBottomOf="@+id/button_google_person"
+                app:layout_constraintLeft_toLeftOf="@+id/button_google_person"
+                app:layout_constraintTop_toTopOf="@+id/button_google_person" />
+
+            <Button
+                android:id="@+id/button_google_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#4425B9"
+                android:text="Continue com Google"
+                android:textColor="#fff"
+                app:layout_constraintTop_toBottomOf="@+id/button_facebook_person" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

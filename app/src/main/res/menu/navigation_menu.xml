@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_bar_destaques"
+        android:icon="@drawable/ic_destaques_24"
+        android:title="Destaques" />
+
+    <item
+        android:id="@+id/nav_bar_hotel"
+        android:icon="@drawable/ic_baseline_hotel_24"
+        android:title="Hoteis" />
+
+    <item
+        android:id="@+id/nav_bar_packages"
+        android:icon="@drawable/ic_baseline_import_packages_24"
+        android:title="Pacotes" />
+
+    <item
+        android:id="@+id/nav_bar_person"
+        android:icon="@drawable/ic_baseline_person_pin_24"
+        android:title="Perfil" />
+
+    <item
+        android:id="@+id/nav_bar_more"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="Mais" />
+
+</menu>
